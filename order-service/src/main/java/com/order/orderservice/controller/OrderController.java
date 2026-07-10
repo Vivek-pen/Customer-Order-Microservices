@@ -23,7 +23,7 @@ public class OrderController {
     @Autowired
     private final OrderService orderService;
 
-    @PostMapping("/placeorder")
+    @PostMapping("/orders/placeorder")
     public ResponseEntity<String> postOrder(@RequestBody Order order){
         CustomerResponse customerResponse = customerService.getCustomer(order.getCustomerId());
         System.out.println(customerResponse.getIsError());
