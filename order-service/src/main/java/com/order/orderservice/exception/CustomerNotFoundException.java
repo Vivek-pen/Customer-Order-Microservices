@@ -1,4 +1,4 @@
-package com.customer.customerservice.exception;
+package com.order.orderservice.exception;
 
 public class CustomerNotFoundException extends RuntimeException {
 
